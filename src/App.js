@@ -3,23 +3,31 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+    <h1>Simple React Component practice </h1>
+      <Person name="MD.Shakil" proffesion="Front-end Developer"></Person>
+      <Friend name="MD.Rabbi " proffesion="Front-end Developer"></Friend>
+      <Person name="Debu" proffesion="Front-end Developer"></Person>
+      <Person name="Debu" proffesion="Front-end Developer"></Person>
     </div>
   );
 }
+ 
+function Person(props){ 
+  return( 
+    <div className='personalInfo'>
+      <h1>{props.name}</h1> 
+      <p>{props.proffesion}</p>
+    </div>
+  )
+}
 
+function Friend(props){ 
+  return( 
+    <div className='friendsInfo'>
+      <h1>{props.name}</h1> 
+      <p>{props.proffesion}</p>
+    </div>
+  )
+}
 export default App;

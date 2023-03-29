@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* custome css  */ 
+.personalInfo{
+  background-color: #2600ff; 
+  color: #ffff; 
+  padding: 5px; 
+  width: 300px; 
+  margin: 0 auto; 
+  border-radius: 10px; 
+  margin-top: 10px;
+} 
+.personalInfo:hover{
+  filter: drop-shadow(5px 5px 10px #4119f3); 
+  color: #ffff; 
+  padding: 5px; 
+  width: 300px; 
+  margin: 0 auto; 
+  border-radius: 10px; 
+  margin-top: 10px;
+} 
+.friendsInfo{
+  background-color: #a200ff; 
+  color: #ffff; 
+  padding: 5px; 
+  width: 300px; 
+  margin: 0 auto; 
+  border-radius: 10px; 
+  margin-top: 10px; 
+  
+} 
+
