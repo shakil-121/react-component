@@ -1,14 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App() { 
+const Developers=['Shakil','Rabbi','Debu','Samiul']
+
   return (
     <div className="App"> 
-    <h1>Simple React Component practice </h1>
-      <Person name="MD.Shakil" proffesion="Front-end Developer"></Person>
+    <h1>Simple React Component practice </h1> 
+{
+  Developers.map(developer=><Person name={developer}></Person>)
+}
+      {/* <Person name="MD.Shakil" proffesion="Front-end Developer"></Person>
       <Friend name="MD.Rabbi " proffesion="Front-end Developer"></Friend>
       <Person name="Debu" proffesion="Front-end Developer"></Person>
-      <Person name="Debu" proffesion="Front-end Developer"></Person>
+      <Person name="Debu" proffesion="Front-end Developer"></Person> */}
     </div>
   );
 }
